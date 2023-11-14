@@ -10,9 +10,9 @@ class Categoria{
 //inflar con datos para visualizarlo a través de un Gridview.builder
 
 final Menu = [
-  Categoria(1, "Perfil", "perfil.png"),
+  Categoria(1, "perfil", "perfil.png"),
   Categoria(2, "camara", "camara.png"),
-  Categoria(3, "Ubicacion", "ubicacion.png"),
-  Categoria(4, "Viaje", "img4.png"),
+  Categoria(3, "ubicacion", "ubicacion.png"),
+  Categoria(4, "viaje", "img4.png"),
 
 ];

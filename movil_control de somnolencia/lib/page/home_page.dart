@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import'camara_page.dart';
+import'perfil_page.dart';
 import '../model/categoria.dart';
 
 
@@ -37,8 +38,15 @@ class _HomePageState extends State<HomePage> {
               ),
               child:GestureDetector(
                 onTap: (){
-                  //print("click en "+ Menu[index].nombre);
-                  Navigator.push(context, MaterialPageRoute(builder: (_)=>  CamaraPage()));
+                  print("click en "+ Menu[index].nombre);
+
+                if (Menu[index].nombre == "perfil") {
+                  Navigator.push(context, MaterialPageRoute(builder: (_) => PerfilPage()));
+                }  
+                if (Menu[index].nombre == "camara") {
+                  Navigator.push(context, MaterialPageRoute(builder: (_) => CamaraPage()));
+                }
+                
                 },
                
               child:Column(
